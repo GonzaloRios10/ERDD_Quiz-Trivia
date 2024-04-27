@@ -17,7 +17,6 @@ let questionNro = 0;
 let score = 0;
 let scoreHistory = JSON.parse(localStorage.getItem('scoreHistory')) || [];
 
-
 function loadQuestions() {
     const playButton = document.getElementById("play-button");
     const homeSection = document.getElementById("home");
@@ -159,14 +158,32 @@ function checkAnswer(optionUser, correctAnswer, questionsData) {
     if (questionNro < questionsData.length) {
         renderQuestions(questionsData); 
     } else {
-        alert("Completado! Tu puntuación es: " + score);
+        const modalBackground = document.getElementById('modal-background');
+        const finishedSection = document.getElementById('finished');
+        const finalScoreSpan = document.getElementById('final-score');
+
+        if (score === 0) {
+            const memeImage = document.getElementById('meme-image');
+            memeImage.src = "assets/images/0score.png";
+        } else {
+            const memeImage = document.getElementById('meme-image');
+            memeImage.src = "assets/images/profile-meme.png";
+        }
+
+        // Muestra la puntuación final
+        finalScoreSpan.textContent = score;
+        // Muestra el mensaje de alerta
+        modalBackground.style.display = 'block';
+        finishedSection.style.display = 'block';
+
         scoreHistory.push(score);
         localStorage.setItem('scoreHistory', JSON.stringify(scoreHistory));
-        // if (scoreHistory.length > 2) {
-        //     scoreHistory.shift(); // Elimina el primer elemento del array (el más antiguo)
-        //     localStorage.setItem('scoreHistory', JSON.stringify(scoreHistory));
-        // }
         disableOptionsClick();
+
+        if (scoreHistory.length > 3) {
+            scoreHistory = [];
+            localStorage.setItem('scoreHistory', JSON.stringify(scoreHistory));
+        }
     }
 
     // Obtener la barra de progreso y calcular el progreso
@@ -196,6 +213,13 @@ function checkAnswer(optionUser, correctAnswer, questionsData) {
         });
 
     }
+}
+
+function closeAlert() {
+    const modalBackground = document.getElementById('modal-background');
+    const finishedSection = document.getElementById('finished');
+    modalBackground.style.display = 'none';
+    finishedSection.style.display = 'none';
 }
 
 function disableOptionsClick() {

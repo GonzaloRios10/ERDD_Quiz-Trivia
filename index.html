@@ -19,9 +19,9 @@
         
         <nav class="nav">
             <ul class="navbar">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="about.html">Acerca de</a></li>
-                <li><a href="contact.html">Contacto</a></li>
+                <li class="nav-link"><a href="index.html">Inicio</a></li>
+                <li class="nav-link"><a href="about.html">Acerca de</a></li>
+                <li class="nav-link"><a href="contact.html">Contacto</a></li>
             </ul>
         </nav>
 
@@ -67,10 +67,29 @@
         </div>
     </section>
     
-    
     <div id="questions" style="display: none;">
         <!--  -->
     </div>
+    
+    <!-- Contenido detrás del modal -->
+    <div class="modal-background" id="modal-background" style="display: none;"></div>
+    
+    <!-- Modal -->
+    <div id="finished" class="alert alert-success alert-dismissible fade show" role="alert" style="position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 60%; height: auto; max-width: 90%; background-color: white; z-index: 9999; display: none;">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-12 text-center">
+                    <h4 class="alert-heading text-dark">¡Completado!</h4>
+                    <p class="text-dark">Tu puntuación es: <span id="final-score"></span></p>
+                    <hr>
+                    <img src="" class="img-fluid" alt="meme" id="meme-image">
+                    <button type="button" class="btn-close" aria-label="Close" onclick="closeAlert()" style="position: absolute; top: 10px; right: 10px; color: black;"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
       
     <div id="footer"></div>
 
