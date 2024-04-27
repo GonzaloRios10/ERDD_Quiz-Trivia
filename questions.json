@@ -1,72 +1,72 @@
 [
     {
-        "image": "",
+        "image": "assets/images/programming.jpg",
         "question": "¿Qué tecnología le solicitaron saber en su primer propuesta de dev?",
         "options": ["Angular", "React", "Vue"],
         "answer": "Angular"
     },
     {
-        "image": "",
+        "image": "assets/images/birthday.jpg",
         "question": "¿Qué edad tiene?",
         "options": ["20", "25", "30"],
         "answer": "25"
     },
     {
-        "image": "",
+        "image": "assets/images/friends.jpg",
         "question": "¿Por qué empezó a programar?",
         "options": ["Influencia de amigos", "Por trabajo", "Por interés personal"],
         "answer": "Influencia de amigos"
     },
     {
-        "image": "",
+        "image": "assets/images/workpast.jpg",
         "question": "¿En su pasado, qué trabajo tuvo?",
         "options": ["Cajero", "Mesero", "Vendedor"],
         "answer": "Cajero"
     },
     {
-        "image": "",
+        "image": "assets/images/marketing.jpg",
         "question": "¿Le gusta el marketing?",
         "options": ["Sí", "No", "Un Poco"],
         "answer": "Sí"
     },
     {
-        "image": "",
+        "image": "assets/images/contentSocial.jpg",
         "question": "¿Cómo se inició primeramente en sus redes?",
         "options": ["Subiendo memes", "Compartiendo artículos", "Publicando fotos"],
         "answer": "Subiendo memes"
     },
     {
-        "image": "",
+        "image": "assets/images/social.jpg",
         "question": "¿Qué busca compartir a través de sus redes?",
         "options": ["Recursos", "Anecdotas", "Nada"],
         "answer": "Recursos"
     },
     {
-        "image": "",
+        "image": "assets/images/months.jpg",
         "question": "¿Cuánto tiempo le llevó conseguir trabajo como autodidacta?",
         "options": ["3 meses", "6 meses", "1 año"],
         "answer": "6 meses"
     },
     {
-        "image": "",
+        "image": "assets/images/country.jpg",
         "question": "¿De dónde es?",
         "options": ["Argentina", "España", "México"],
         "answer": "España"
     },
     {
-        "image": "",
+        "image": "assets/images/sport.jpg",
         "question": "¿Qué tipo de deporte practica?",
         "options": ["Fútbol", "Gimnasio", "Natación"],
         "answer": "Gimnasio"
     },
     {
-        "image": "",
+        "image": "assets/images/editCode.jpg",
         "question": "¿Cuál es su editor de codigo actual?",
         "options": ["Visual Studio Code", "Sublime Text", "Atom"],
         "answer": "Visual Studio Code"
     },
     {
-        "image": "",
+        "image": "assets/images/work.jpg",
         "question": "¿Su profesión es?",
         "options": ["Programador", "Cantante", "Lic. en Marketing"],
         "answer": "Programador"

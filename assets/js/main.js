@@ -17,6 +17,7 @@ let questionNro = 0;
 let score = 0;
 let scoreHistory = JSON.parse(localStorage.getItem('scoreHistory')) || [];
 
+
 function loadQuestions() {
     const playButton = document.getElementById("play-button");
     const homeSection = document.getElementById("home");
@@ -161,6 +162,10 @@ function checkAnswer(optionUser, correctAnswer, questionsData) {
         alert("Completado! Tu puntuación es: " + score);
         scoreHistory.push(score);
         localStorage.setItem('scoreHistory', JSON.stringify(scoreHistory));
+        // if (scoreHistory.length > 2) {
+        //     scoreHistory.shift(); // Elimina el primer elemento del array (el más antiguo)
+        //     localStorage.setItem('scoreHistory', JSON.stringify(scoreHistory));
+        // }
         disableOptionsClick();
     }
 
